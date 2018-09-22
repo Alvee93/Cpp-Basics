@@ -5,7 +5,10 @@ using namespace std;
 
 int main() {
     srand(time(NULL));
-    int r_num = rand() %100;
+    int r_num = rand() %100 +1;
+    while (r_num==100){
+        r_num = rand() %100 +1;
+    }
     cout << r_num << endl;
 
     bool is_found = 0;
